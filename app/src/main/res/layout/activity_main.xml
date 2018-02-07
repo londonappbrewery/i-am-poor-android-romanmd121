@@ -12,34 +12,38 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Text1_I_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginTop="49dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/Text2_poor"
+        android:layout_toStartOf="@+id/Text2_poor"
         android:text="@string/main_text1"
         android:textColor="@color/textGrey"
         android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Text2_poor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
+        android:layout_above="@+id/Image_Coal"
+        android:layout_alignEnd="@+id/Image_Coal"
+        android:layout_alignRight="@+id/Image_Coal"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
         android:text="@string/main_text2"
-        android:layout_marginRight="10dp"
         android:textColor="@color/textRed"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/Image_Coal"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/Text1_I_am"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/coal" />
